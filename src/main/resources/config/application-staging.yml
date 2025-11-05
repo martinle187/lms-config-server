@@ -1,0 +1,35 @@
+# APPLICATION --------------------------------------------------------------------------------------
+application:
+
+  ## calendar --------------------------------------------------------------------------------------
+  calendar:
+    arrange-class:
+      regular:
+        arrange-types-ignored: 'CHANGE_CLASS_IN_FUTURE'
+        hour-will-create-class: 10
+    event:
+      kafka_topic_class_demo: "tutor_staging_01.edupia_tutor.class_demo"
+      kafka_topic_class_demo_student: "tutor_staging_01.edupia_tutor.class_demo_student"
+      kafka_topic_class_regular_session: "tutor_staging_01.edupia_tutor.class_regular_session"
+      kafka_topic_class_teacher_schedule: "tutor_staging_01.edupia_tutor.class_teacher_schedule"
+      kafka_topic_crm_order: "tutor_staging_01.edupia_tutor.crm_order"
+      kafka_topic_mdl_user_info_data: "tutor_staging_01.edupia_tutor.mdl_user_info_data"
+      kafka_topic_mdl_role_assignments: "tutor_staging_01.edupia_tutor.mdl_role_assignments"
+      kafka_topic_task_monitor_session: "tutor_staging_01.edupia_tutor.task_monitor_session"
+      kafka_topic_class_regular_session_student: "tutor_staging_01.edupia_tutor.class_regular_session_student"
+      kafka_topic_task_arrange_class: "tutor_staging_01.edupia_tutor.task_arrange_class"
+      kafka_topic_class_regular_student: "tutor_staging_01.edupia_tutor.class_regular_student"
+      kafka_topic_class_regular: "tutor_staging_01.edupia_tutor.class_regular"
+      kafka_topic_task_support_technical: "tutor_staging_01.edupia_tutor.task_support_technical"
+      kafka_topic_task_review_demo: "tutor_staging_01.edupia_tutor.task_review_demo"
+      kafka_topic_teacher_classify_detail: "tutor_staging_01.edupia_tutor.teacher_classify_detail"
+      kafka_topic_teacher_classify: "tutor_staging_01.edupia_tutor.teacher_classify"
+      kafka_topic_mdl_user: "tutor_staging_01.edupia_tutor.mdl_user"
+      kafka_topic_task_arrange_make_up_session: "tutor_staging_01.edupia_tutor.task_arrange_make_up_session"
+
+  ## service_crm_contact ---------------------------------------------------------------------------
+  service_crm_contact:
+    base_url: "https://crm.edupia.edu.vn"
+  ## service_crm_order -----------------------------------------------------------------------------
+  service_crm_order:
+    base_url: "https://crm.edupia.edu.vn"

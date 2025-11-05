@@ -1,0 +1,99 @@
+# APPLICATION --------------------------------------------------------------------------------------
+
+application:
+  test-mode:
+    enable: false
+  ## calendar --------------------------------------------------------------------------------------
+  calendar:
+    calendar_report:
+      student-detail-info:
+        lms_student_url: 'https://lms.edupiatutor.vn'
+    event:
+      kafka_topic_task_prepare: "tutor_production.tutor.task_prepare"
+      kafka_topic_student_info: "tutor_production.tutor.student_info"
+      kafka_topic_task_weekly_exercise: "tutor_production.tutor.task_weekly_exercise"
+      kafka_topic_task_after_school_care: "tutor_production.tutor.task_after_school_care"
+      kafka_topic_class_demo: "tutor_production.tutor.class_demo"
+      kafka_topic_class_demo_student: "tutor_production.tutor.class_demo_student"
+      kafka_topic_class_regular_session: "tutor_production.tutor.class_regular_session"
+      kafka_topic_class_teacher_schedule: "tutor_production.tutor.class_teacher_schedule"
+      kafka_topic_crm_order: "tutor_production.tutor.crm_order"
+      kafka_topic_mdl_user_info_data: "tutor_production.tutor.mdl_user_info_data"
+      kafka_topic_mdl_role_assignments: "tutor_production.tutor.mdl_role_assignments"
+      kafka_topic_task_monitor_session: "tutor_production.tutor.task_monitor_session"
+      kafka_topic_class_regular_session_student: "tutor_production.tutor.class_regular_session_student"
+      kafka_topic_task_arrange_class: "tutor_production.tutor.task_arrange_class"
+      kafka_topic_class_regular_student: "tutor_production.tutor.class_regular_student"
+      kafka_topic_class_regular: "tutor_production.tutor.class_regular"
+      kafka_topic_task_support_technical: "tutor_production.tutor.task_support_technical"
+      kafka_topic_task_review_demo: "tutor_production.tutor.task_review_demo"
+      kafka_topic_teacher_classify_detail: "tutor_production.tutor.teacher_classify_detail"
+      kafka_topic_teacher_classify: "tutor_production.tutor.teacher_classify"
+      kafka_topic_mdl_user: "tutor_production.tutor.mdl_user"
+      kafka_topic_task_arrange_make_up_session: "tutor_production.tutor.task_arrange_make_up_session"
+      kafka_topic_reservation_form: "tutor_production.tutor.reservation_form"
+      kafka_topic_student_transfer: "tutor_production.tutor.student_transfer"
+      kafka_topic_student_arrange_class_result: "tutor_production.tutor.student_arrange_class_result"
+      kafka_topic_evaluate_session: "tutor_production.tutor.evaluate_session"
+      kafka_topic_teacher_level_teacher: "tutor_production.tutor.teacher_level_teacher"
+      kafka_topic_teacher_confirm_schedule_suggest: "tutor_production.tutor.teacher_confirm_schedule_suggest"
+      kafka_topic_task_teacher_schedule_urgent_cancel: "tutor_production.tutor.task_teacher_schedule_urgent_cancel"
+      kafka_topic_ccm_zalo_processor: "tutor_production.tutor.ccm_zalo_processor"
+      kafka_topic_task: "tutor_production.tutor.task"
+      kafka_topic_violation_level_teacher: "tutor_production.tutor.violation_level_teacher"
+      kafka_topic_task_arrange_class_detail: "tutor_production.tutor.task_arrange_class_detail"
+      kafka_topic_task_greeting_call: "tutor_production.tutor.task_greeting_call"
+      kafka_topic_task_take_care: "tutor_production.tutor.task_take_care"
+      kafka_topic_task_change_class_teacher: "tutor_production.tutor.task_change_class_teacher"
+      kafka_topic_student_program_conversion: "tutor_production.tutor.student_program_conversion"
+      kafka_topic_teacher_contract_terminated: "tutor_production.tutor.teacher_contract_terminated"
+      kafka_topic_task_change_demo_schedule: "tutor_production.tutor.task_change_demo_schedule"
+      kafka_topic_class_regular_schedule: "tutor_production.tutor.class_regular_schedule"
+      kafka_topic_report_tutor_quality: "tutor_production.tutor.report_tutor_quality"
+      kafka_topic_quality_control_session: "tutor_production.tutor.quality_control_session"
+      kafka_topic_teacher_info: "tutor_production.tutor.teacher_info"
+      kafka_topic_estimated_expired_date: "tutor_production.tutor.estimated_expired_date"
+      kafka_topic_task_monitor_backup: "tutor_production.tutor.task_monitor_backup"
+      kafka_topic_user_survey: "tutor_production.tutor.user_survey"
+      kafka_topic_user_survey_notification: "tutor_production.tutor.user_survey_notification"
+      kafka_topic_crm_bitrix_deal: "tutor_production.tutor.crm_bitrix_deal"
+      kafka_topic_class_training: "tutor_production.tutor.class_training"
+      kafka_topic_class_training_student: "tutor_production.tutor.class_training_student"
+      kafka_topic_class_training_session: "tutor_production.tutor.class_training_session"
+      kafka_topic_class_training_session_student: "tutor_production.tutor.class_training_session_student"
+
+      kafka_topic_task_parent_feedback: "tutor_production.tutor.task_parent_feedback"
+      kafka_topic_tm_group_teacher: "tutor_production.tutor.tm_group_teacher"
+      kafka_topic_center: "tutor_production.tutor.center"
+      kafka_topic_class_room: "tutor_production.tutor.class_room"
+      kafka_topic_user_center: "tutor_production.tutor.user_center"
+      kafka_topic_teacher_schedule_keeping: "tutor_production.tutor.teacher_schedule_keeping"
+      kafka_topic_mgmt_class_in_account: "tutor_production.tutor.mgmt_class_in_account"
+      kafka_topic_teacher_subject: "tutor_production.tutor.teacher_subject"
+      kafka_topic_quality_control_class_demo: "tutor_production.tutor.quality_control_class_demo"
+      kafka_topic_teacher_schedule_keeping_detail: "tutor_production.tutor.teacher_schedule_keeping_detail"
+
+    process_order:
+      date_need_apply_new_function_version_3: 1706547600000
+    quarterly_exam:
+      study_programs: c9e640d4-6d3d-49fc-8fe5-bc59f0bca308,65800dc6-a15c-4d2b-8120-879545eeb26e,e3018785-cf19-404b-8341-04e7a3114567,e3018785-cf19-404b-8341-04e7a31145b0,e3018785-cf19-404b-8341-04e7a31113a0
+      start_date: 20240226
+      end_date: 20240303
+
+  user:
+    event:
+      kafka_topic_student_remain: "tutor_production.tutor.student_remain"
+      kafka_topic_parents_feedback: "tutor_production.tutor.parents_feedback"
+  #  ## service_crm_contact ---------------------------------------------------------------------------
+  #  service_crm_contact:
+  #    base_url: "https://crm3.edupia.edu.vn"
+  #  ## service_crm_order -----------------------------------------------------------------------------
+  #  service_crm_order:
+  #    base_url: "https://crm3.edupia.edu.vn"
+
+  edupia:
+    base-url: "https://service3.edupia.vn"
+    domain: "https://learning-api.edupia.vn"
+    url: "/tutor/filter-report-exam-months"
+    api_token_header: "api-token"
+    khaothi-url: "https://khaothi.edupia.vn"
