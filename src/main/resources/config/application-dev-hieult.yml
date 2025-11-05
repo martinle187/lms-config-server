@@ -17,6 +17,8 @@ spring:
 application:
   common-google-auth:
     credential:
+      folder: "D:/edupia/tutor-2022/_temp/google-sheet-token"
+      json-path: "D:/edupia/tutor-2022/_temp/google-sheet-token/google-sheet-client-id.json"
       google-drive:
         json-path: "D:/edupia/tutor-2022/core/core-google-drive/google-drive-config/credentials.json"
       firebase:
